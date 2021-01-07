@@ -1,0 +1,484 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>下载工具</title>
+<style type ="text/css">
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+	html,body{
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background: #eeeeee;
+		
+	}
+	.thanks{
+		position: relative;
+		top: 200px;
+		text-align: center;
+		font-size: 48px;
+		-webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-name: h1-slow;
+        -ms-animation-name: h1-slow;
+        animation-name: h1-slow;
+        -webkit-animation-duration: 4s;
+        -ms-animation-duration: 4s;
+        animation-duration: 4s;
+        -webkit-animation-iteration-count: infinite;
+        -ms-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+        -ms-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-delay: 0s;
+        -ms-animation-delay: 0s;
+        animation-delay: 0s;
+        -webkit-animation-play-state: running;
+        -ms-animation-play-state: running;
+        animation-play-state: running;
+        }
+        @-webkit-keyframes h1-slow {
+        0% {
+        -webkit-transform: translate(0px, 0px) rotate(0deg)
+        }
+        2% {
+        -webkit-transform: translate(-1px, 1.5px) rotate(1.5deg)
+        }
+        4% {
+        -webkit-transform: translate(1.3px, 0px) rotate(-0.5deg)
+        }
+        6% {
+        -webkit-transform: translate(1.4px, 1.4px) rotate(-2deg)
+        }
+        8% {
+        -webkit-transform: translate(-1.3px, -1px) rotate(-1.5deg)
+        }
+        10% {
+        -webkit-transform: translate(1.4px, 0px) rotate(-2deg)
+        }
+        12% {
+        -webkit-transform: translate(-1.3px, -1px) rotate(-2deg)
+        }
+        14% {
+        -webkit-transform: translate(1.5px, 1.3px) rotate(1.5deg)
+        }
+        16% {
+        -webkit-transform: translate(1.5px, -1.5px) rotate(-1.5deg)
+        }
+        18% {
+        -webkit-transform: translate(1.3px, -1.3px) rotate(-2deg)
+        }
+        20% {
+        -webkit-transform: translate(1px, 1px) rotate(-0.5deg)
+        }
+        22% {
+        -webkit-transform: translate(1.3px, 1.5px) rotate(-2deg)
+        }
+        24% {
+        -webkit-transform: translate(-1.4px, -1px) rotate(2deg)
+        }
+        26% {
+        -webkit-transform: translate(1.3px, -1.3px) rotate(0.5deg)
+        }
+        28% {
+        -webkit-transform: translate(1.6px, -1.6px) rotate(-2deg)
+        }
+        30% {
+        -webkit-transform: translate(-1.3px, -1.3px) rotate(-1.5deg)
+        }
+        32% {
+        -webkit-transform: translate(-1px, 0px) rotate(2deg)
+        }
+        34% {
+        -webkit-transform: translate(1.3px, 1.3px) rotate(-0.5deg)
+        }
+        36% {
+        -webkit-transform: translate(1.3px, 1.6px) rotate(1.5deg)
+        }
+        38% {
+        -webkit-transform: translate(1.3px, -1.6px) rotate(1.5deg)
+        }
+        40% {
+        -webkit-transform: translate(-1.4px, -1px) rotate(-0.5deg)
+        }
+        42% {
+        -webkit-transform: translate(-1.4px, 1.3px) rotate(-0.5deg)
+        }
+        44% {
+        -webkit-transform: translate(-1.6px, 1.4px) rotate(0.5deg)
+        }
+        46% {
+        -webkit-transform: translate(-2.1px, -1.3px) rotate(-0.5deg)
+        }
+        48% {
+        -webkit-transform: translate(1px, 1.6px) rotate(1.5deg)
+        }
+        50% {
+        -webkit-transform: translate(1.6px, 1.6px) rotate(1.5deg)
+        }
+        52% {
+        -webkit-transform: translate(-1.4px, 1.6px) rotate(0.5deg)
+        }
+        54% {
+        -webkit-transform: translate(1.6px, -1px) rotate(-2deg)
+        }
+        56% {
+        -webkit-transform: translate(1.3px, -1.6px) rotate(-2deg)
+        }
+        58% {
+        -webkit-transform: translate(-1.3px, -1.6px) rotate(0.5deg)
+        }
+        60% {
+        -webkit-transform: translate(1.3px, 1.6px) rotate(-0.5deg)
+        }
+        62% {
+        -webkit-transform: translate(0px, 0px) rotate(-1.5deg)
+        }
+        64% {
+        -webkit-transform: translate(-1.6px, -1.6px) rotate(-2deg)
+        }
+        66% {
+        -webkit-transform: translate(1.6px, -1.6px) rotate(0.5deg)
+        }
+        68% {
+        -webkit-transform: translate(0px, -1.6px) rotate(-2deg)
+        }
+        70% {
+        -webkit-transform: translate(-1.6px, 1px) rotate(1.5deg)
+        }
+        72% {
+        -webkit-transform: translate(-1.6px, 1.6px) rotate(2deg)
+        }
+        74% {
+        -webkit-transform: translate(1.3px, -1.6px) rotate(-0.5deg)
+        }
+        76% {
+        -webkit-transform: translate(1.4px, 1px) rotate(-0.5deg)
+        }
+        78% {
+        -webkit-transform: translate(-1px, 1.4px) rotate(2deg)
+        }
+        80% {
+        -webkit-transform: translate(1.4px, 1.6px) rotate(2deg)
+        }
+        82% {
+        -webkit-transform: translate(-1.6px, -1.6px) rotate(-0.5deg)
+        }
+        84% {
+        -webkit-transform: translate(-1.4px, 1.4px) rotate(-2deg)
+        }
+        86% {
+        -webkit-transform: translate(1px, 1.4px) rotate(-2deg)
+        }
+        88% {
+        -webkit-transform: translate(-1.4px, 1.4px) rotate(-1.5deg)
+        }
+        90% {
+        -webkit-transform: translate(-1.6px, -1.6px) rotate(-2deg)
+        }
+        92% {
+        -webkit-transform: translate(-1.6px, 1.6px) rotate(2deg)
+        }
+        94% {
+        -webkit-transform: translate(-1.6px, -1.6px) rotate(-2deg)
+        }
+        96% {
+        -webkit-transform: translate(-1.4px, 1.3px) rotate(-2deg)
+        }
+        98% {
+        -webkit-transform: translate(1.3px, 1px) rotate(-0.5deg)
+        }
+        }
+        @keyframes h1-slow {
+        0% {
+        transform: translate(0px, 0px) rotate(0deg)
+        }
+        2% {
+        transform: translate(-1px, 1.5px) rotate(1.5deg)
+        }
+        4% {
+        transform: translate(1.3px, 0px) rotate(-0.5deg)
+        }
+        6% {
+        transform: translate(1.4px, 1.4px) rotate(-2deg)
+        }
+        8% {
+        transform: translate(-1.3px, -1px) rotate(-1.5deg)
+        }
+        10% {
+        transform: translate(1.4px, 0px) rotate(-2deg)
+        }
+        12% {
+        transform: translate(-1.3px, -1px) rotate(-2deg)
+        }
+        14% {
+        transform: translate(1.5px, 1.3px) rotate(1.5deg)
+        }
+        16% {
+        transform: translate(1.5px, -1.5px) rotate(-1.5deg)
+        }
+        18% {
+        transform: translate(1.3px, -1.3px) rotate(-2deg)
+        }
+        20% {
+        transform: translate(1px, 1px) rotate(-0.5deg)
+        }
+        22% {
+        transform: translate(1.3px, 1.5px) rotate(-2deg)
+        }
+        24% {
+        transform: translate(-1.4px, -1px) rotate(2deg)
+        }
+        26% {
+        transform: translate(1.3px, -1.3px) rotate(0.5deg)
+        }
+        28% {
+        transform: translate(1.6px, -1.6px) rotate(-1.5deg)
+        }
+        30% {
+        transform: translate(-1.3px, -1.3px) rotate(-1.5deg)
+        }
+        32% {
+        transform: translate(-1px, 0px) rotate(2deg)
+        }
+        34% {
+        transform: translate(1.3px, 1.3px) rotate(-0.5deg)
+        }
+        36% {
+        transform: translate(1.3px, 1.6px) rotate(1.5deg)
+        }
+        38% {
+        transform: translate(1.3px, -1.6px) rotate(1.5deg)
+        }
+        40% {
+        transform: translate(-1.4px, -1px) rotate(-0.5deg)
+        }
+        42% {
+        transform: translate(-1.4px, 1.3px) rotate(-0.5deg)
+        }
+        44% {
+        transform: translate(-1.6px, 1.4px) rotate(0.5deg)
+        }
+        46% {
+        transform: translate(-2.1px, -1.3px) rotate(-0.5deg)
+        }
+        48% {
+        transform: translate(1px, 1.6px) rotate(1.5deg)
+        }
+        50% {
+        transform: translate(1.6px, 1.6px) rotate(1.5deg)
+        }
+        52% {
+        transform: translate(-1.4px, 1.6px) rotate(0.5deg)
+        }
+        54% {
+        transform: translate(1.6px, -1px) rotate(-2deg)
+        }
+        56% {
+        transform: translate(1.3px, -1.6px) rotate(-2deg)
+        }
+        58% {
+        transform: translate(-1.3px, -1.6px) rotate(0.5deg)
+        }
+        60% {
+        transform: translate(1.3px, 1.6px) rotate(-0.5deg)
+        }
+        62% {
+        transform: translate(0px, 0px) rotate(-1.5deg)
+        }
+        64% {
+        transform: translate(-1.6px, -1.6px) rotate(-2deg)
+        }
+        66% {
+        transform: translate(1.6px, -1.6px) rotate(0.5deg)
+        }
+        68% {
+        transform: translate(0px, -1.6px) rotate(-2deg)
+        }
+        70% {
+        transform: translate(-1.6px, 1px) rotate(1.5deg)
+        }
+        72% {
+        transform: translate(-1.6px, 1.6px) rotate(2deg)
+        }
+        74% {
+        transform: translate(1.3px, -1.6px) rotate(-0.5deg)
+        }
+        76% {
+        transform: translate(1.4px, 1px) rotate(-0.5deg)
+        }
+        78% {
+        transform: translate(-1px, 1.4px) rotate(2deg)
+        }
+        80% {
+        transform: translate(1.4px, 1.6px) rotate(2deg)
+        }
+        82% {
+        transform: translate(-1.6px, -1.6px) rotate(-0.5deg)
+        }
+        84% {
+        transform: translate(-1.4px, 1.4px) rotate(-2deg)
+        }
+        86% {
+        transform: translate(1px, 1.4px) rotate(-2deg)
+        }
+        88% {
+        transform: translate(-1.4px, 1.4px) rotate(-1.5deg)
+        }
+        90% {
+        transform: translate(-1.6px, -1.6px) rotate(-2deg)
+        }
+        92% {
+        transform: translate(-1.4px, 1.6px) rotate(2deg)
+        }
+        94% {
+        transform: translate(-1.6px, -1.6px) rotate(-2deg)
+        }
+        96% {
+        transform: translate(-1.4px, 1.3px) rotate(-2deg)
+        }
+        98% {
+        transform: translate(1.3px, 1px) rotate(-0.5deg)
+        }
+		}
+	h1{
+		position: relative;
+		top: 200px;
+		text-align: center;
+		font-size: 48px;
+		
+	}
+	span:nth-child(1) {
+  animation: blink 1s steps(1, start) 0.33s infinite;
+}
+ 
+span:nth-child(2) {
+  animation: blink 1s steps(1, start) 0.66s infinite;
+}
+ 
+span:nth-child(3) {
+  animation: blink 1s steps(1, start) 0.33s infinite;
+}
+ 
+span:nth-child(4) {
+  animation: blink 1s steps(1, start) 0.66s infinite;
+}
+ 
+span:nth-child(5) {
+  animation: blink 1s steps(1, start) 0.33s infinite;
+}
+ 
+span:nth-child(6) {
+  animation: blink 1s steps(1, start) 0.66s infinite;
+}
+ 
+@keyframes blink {
+  33% {
+    color: #FF4057;
+  }
+  66% {
+    color: #FF8260;
+  }
+}
+	
+	
+
+	@keyframes password{
+  0%{opacity: 1;}
+  100%{opacity: 0;} 
+}
+/* 添加兼容性前缀 */
+@-webkit-keyframes password {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-moz-keyframes password {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-ms-keyframes password {
+    0% {opacity: 1; } 
+    100% { opacity: 0;}
+}
+@-o-keyframes password {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+/* 定义password类*/
+.password{
+    color: red;
+    animation: password 1s linear infinite;  
+    /* 其它浏览器兼容性前缀 */
+    -webkit-animation: password 1s linear infinite;
+    -moz-animation: password 1s linear infinite;
+    -ms-animation: password 1s linear infinite;
+    -o-animation: password 1s linear infinite;
+}
+	.center{
+        position: relative;
+		top: 300px;
+		margin: 0 auto;
+		width: 350px;
+		height: 100px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		border: 1px solid #AFAFAF;
+		background: #DFDFDF;
+		text-align: center;
+		vertical-align: middle;
+	    line-height: 100px;
+		
+		
+	}
+	.center p{
+		display: inline;
+		font-size: 32px;
+	    margin: 0 auto;
+		text-align: center;
+
+	}
+	
+	
+	#input {position: absolute;top: 0;left: 0;opacity: 0;z-index: -10;}
+	button{
+		background-color: #eeeeee;
+		position: absolute;
+		top: 0;
+		right: 0;
+		border-right: none;
+		border-top: none;
+		border-bottom: 1px solid #afafaf;
+		border-left: 1px solid #afafaf;
+		border-bottom-left-radius: 3px;
+	}
+	
+	</style>
+	
+
+</head>
+
+<body>
+    <h1  class="thanks" style="color: tomato;">非常感谢您的支持！</h1>
+    <h1 style="color:royalblue;">请低调使用，<span>不</span><span>要</span><span>分</span><span>享</span><span>出</span><span>去</span>，否则会很快失效！</h1>
+    <div class="center"><p>请复制密码：</p><p  id="text" class="password">2156</p>
+		<textarea id="input">不错哦</textarea>
+		<button onclick="copyText()">复制</button>
+	</div>
+	<script type="text/javascript">
+		function copyText() {
+        var text = document.getElementById("text").innerText;
+        var input = document.getElementById("input");
+        input.value = text; // 修改文本框的内容
+        input.select(); // 选中文本
+        document.execCommand("copy"); // 执行浏览器复制命令
+        alert("复制成功:去下载吧！");
+     }
+    </script>
+
+</body>
+</html>
